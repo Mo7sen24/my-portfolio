@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --primary-bg-color: #0e6ece;
+    --primary-color: #ffffff;
+}
+
+* {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: #eceaea;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    height: 60px;
+
+}
+
+
+.logo {
+    text-decoration: none;
+    color: var(--primary-bg-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.955em;
+}
+
+.logo span {
+    font-size: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--primary-bg-color);
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 0px 10px;
+    transition: 0.5s ease;
+
+}
+
+
+.navigation a:hover {
+    color: #000000;
+    font-size: 1em;
+}
+
+
+section {
+    padding: 100px 150px;
+}
+
+.main {
+    background-color: rgb(18, 28, 28);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/Ahmed22.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+
+}
+
+.main h2 {
+    color: var(--primary-color);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-bg-color);
+    font-size: 2.5em;
+    font-weight: 600;
+
+}
+
+.main h3 {
+    color: var(--primary-color);
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #ffffff;
+    background-color: var(--primary-bg-color);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+}
+
+.main-btn:hover {
+    background-color: #0b4d8f;
+    transform: scale(1.1);
+}
+
+
+.social-icons a {
+    color: var(--primary-color);
+    font-size: 1.7em;
+    padding-right: 30px;
+
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(img/aboutme2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    min-height: 100vh;
+
+}
+
+.cards h2 {
+    margin-bottom: 70px;
+    font-size: 2em;
+    color: var(--primary-bg-color);
+    font-weight: 900;
+}
+
+#about-me .content {
+    box-shadow: 0 5px 25px rgba(31, 2, 251, 0.8);
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+#about-me .content p {
+    font-size: 1.5em;
+    color: #2f2f2f;
+    font-weight: 700;
+    padding: 25px;
+    letter-spacing: 1px;
+}
+
+
+#education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #021223;
+    background: url(img/bg2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ .content .card {
+    background-color: #ffffff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(121, 121, 121, 0.219);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
+}
+
+ .content .card:hover {
+    transform: scale(1.1);
+}
+
+
+
+.content .icon {
+    color: var(--primary-bg-color);
+    font-size: 3.5em;
+}
+
+.content .info h3 {
+    color: var(--primary-bg-color);
+    font-size: 1.8em;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content .info h3 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+#work-experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(img/aboutme.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+#work-experience .content .card{
+    background-color: #ffffff;
+    border: 1px solid rgb(25, 99, 139);
+    min-height: 14em;
+    border-radius: 15px;
+    padding: 0; 
+    overflow: hidden; 
+}
+
+.cards .content .card .icon{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.content .card .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    border-radius: 0; 
+}
+
+
+#work-experience .content .card .info {
+    padding: 10px; 
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 500;
+}
