@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
     --primary-bg-color: #0e6ece;
     --primary-color: #ffffff;
 }
 
+/* --- Reset --- */
 * {
-    font-family: "Roboto Slab", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
     scroll-behavior: smooth;
 }
 
-
+/* --- Header --- */
 header {
     background-color: #eceaea;
     width: 100%;
@@ -25,313 +25,44 @@ header {
     align-items: center;
     padding: 10px 150px;
     height: 60px;
-
 }
-
 
 .logo {
     text-decoration: none;
     color: var(--primary-bg-color);
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 0.955em;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 .logo span {
     font-size: 10px;
 }
 
-.navigation a {
-    text-decoration: none;
-    color: var(--primary-bg-color);
-    font-size: 0.8em;
-    font-weight: 500;
-    padding: 0px 10px;
-    transition: 0.5s ease;
-
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
+.navigation a {
+    color: var(--primary-bg-color);
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: 0.3s;
+}
 
 .navigation a:hover {
-    color: #000000;
-    font-size: 1em;
+    color: #000;
 }
 
-
-section {
-    padding: 100px 150px;
-}
-
-.main {
-    background-color: rgb(18, 28, 28);
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(img/Ahmed22.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
-
-}
-
-.main h2 {
-    color: var(--primary-color);
-    font-size: 1.4em;
-    font-weight: 500;
-}
-
-.main h2 span {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--primary-bg-color);
-    font-size: 2.5em;
-    font-weight: 600;
-
-}
-
-.main h3 {
-    color: var(--primary-color);
-    font-size: 0.8em;
-    font-weight: 300;
-    letter-spacing: 2px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.main-btn {
-    color: #ffffff;
-    background-color: var(--primary-bg-color);
-    text-decoration: none;
-    font-size: 0.8em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.5s ease;
-}
-
-.main-btn:hover {
-    background-color: #0b4d8f;
-    transform: scale(1.1);
-}
-
-
-.social-icons a {
-    color: var(--primary-color);
-    font-size: 1.7em;
-    padding-right: 30px;
-
-}
-
-#about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url(img/aboutme2.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
-    min-height: 100vh;
-
-}
-
-.cards h2 {
-    margin-bottom: 70px;
-    font-size: 2em;
-    color: var(--primary-bg-color);
-    font-weight: 900;
-}
-
-#about-me .content {
-    box-shadow: 0 5px 25px rgba(31, 2, 251, 0.8);
-    border-radius: 20px;
-    margin-bottom: 15px;
-}
-
-#about-me .content p {
-    font-size: 1.5em;
-    color: #2f2f2f;
-    font-weight: 700;
-    padding: 25px;
-    letter-spacing: 1px;
-}
-
-
-#education {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #021223;
-    background: url(img/bg2.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
- .content .card {
-    background-color: #ffffff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(121, 121, 121, 0.219);
-    border-radius: 15px;
-    padding: 25px;
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    transition: 0.5s ease;
-}
-
- .content .card:hover {
-    transform: scale(1.1);
-}
-
-
-
-.content .icon {
-    color: var(--primary-bg-color);
-    font-size: 3.5em;
-}
-
-.content .info h3 {
-    color: var(--primary-bg-color);
-    font-size: 1.8em;
-    font-weight: 900;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.content .info h3 span {
-    font-size: 0.8em;
-    font-weight: 300;
-}
-
-#work-experience{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url(img/aboutme.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
-}
-#work-experience .content .card{
-    background-color: #ffffff;
-    border: 1px solid rgb(25, 99, 139);
-    min-height: 14em;
-    border-radius: 15px;
-    padding: 0; 
-    overflow: hidden; 
-}
-
-.cards .content .card .icon{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    
-}
-
-.content .card .icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; 
-    border-radius: 0; 
-}
-
-
-#work-experience .content .card .info {
-    padding: 10px; 
-    text-align: center;
-    font-size: 0.7em;
-    font-weight: 500;
-}
-
-
-
-
-
-
-/* === Responsive Media Queries === */
-
-
-@media (max-width: 1200px) {
-    header {
-    padding: 10px 70px;
-    }
-    section {
-    padding: 100px 70px;
-    }
-    .content .card {
-    width: 40%;
-    }
-    }
-    
-    
-    @media (max-width: 900px) {
-    header {
-    padding: 10px 40px;
-    }
-    section {
-    padding: 100px 40px;
-    }
-    .content .card {
-    width: 45%;
-    }
-    }
-    
-    
-    @media (max-width: 600px) {
-    header {
-    padding: 10px 20px;
-    }
-    section {
-    padding: 80px 20px;
-    }
-   
-    .navigation a {
-        font-size: 12px;
-        padding: 5px;
-    }
-    .content .card {
-    width: 100%;
-    }
-    .main h2 {
-    font-size: 1em;
-    }
-    .main h2 span {
-    font-size: 1.8em;
-    }
-    .main h3 {
-    font-size: 0.7em;
-    }
-    .main-btn {
-    font-size: 0.7em;
-    padding: 0.7em 1.5em;
-    }
-    }
-
-
-    /* إخفاء checkbox */
+/* Hide checkbox */
 #menu-toggle {
     display: none;
 }
 
-/* شكل زر الهامبرجر */
+/* Hamburger icon */
 .menu-icon {
     display: none;
     font-size: 1.8em;
@@ -339,40 +70,176 @@ section {
     cursor: pointer;
 }
 
-/* الموبايل */
+/* --- Main Section --- */
+section {
+    padding: 100px 150px;
+}
+
+.main {
+    background: url(img/Ahmed22.jpeg) center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    color: var(--primary-bg-color);
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 0.9em;
+    margin: 10px 0 30px;
+    letter-spacing: 2px;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: var(--primary-bg-color);
+    padding: 0.9em 2em;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #fff;
+    font-size: 1.6em;
+    margin-right: 20px;
+}
+
+
+/* --- Cards Sections --- */
+.cards {
+    text-align: center;
+}
+
+.cards h2 {
+    margin-bottom: 60px;
+    color: var(--primary-bg-color);
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    width: 21em;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px #0002;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.icon img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.icon {
+    font-size: 3.5em;
+    color: var(--primary-bg-color);
+}
+
+.info h3 {
+    margin: 15px 0;
+    color: var(--primary-bg-color);
+    font-size: 1.5em;
+}
+
+/* --- Work Exp Img Fix --- */
+#work-experience .card .icon {
+    padding: 0;
+}
+
+/* --- Responsive --- */
+
+/* Tablet */
+@media (max-width: 900px) {
+    header {
+        padding: 10px 40px;
+    }
+    section {
+        padding: 100px 40px;
+    }
+}
+
+/* Mobile */
 @media (max-width: 600px) {
 
-    /* إظهار زر الهامبرجر */
+    header {
+        padding: 10px 20px;
+    }
+
+    /* Show hamburger */
     .menu-icon {
         display: block;
     }
 
-    /* إخفاء الناف بار في الوضع الطبيعي */
+    /* Hide nav by default */
     .navigation {
+        display: none;
+        flex-direction: column;
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #eceaea;
         width: 100%;
-        display: none;
-        flex-direction: column;
+        background-color: #eceaea;
         padding: 20px 0;
     }
 
     .navigation a {
-        padding: 15px;
-        text-align: center;
-        font-size: 1em;
+        padding: 15px 0;
         border-bottom: 1px solid #ddd;
+        font-size: 1em;
     }
 
-    /* لما checkbox يتعلم → تظهر القائمة */
+    /* Show nav when menu checked */
     #menu-toggle:checked ~ .navigation {
         display: flex;
     }
 
-    /* نقل اللوجو شوية */
-    header {
-        padding: 10px 20px;
+    section {
+        padding: 80px 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .main h2 span {
+        font-size: 1.8em;
     }
 }
