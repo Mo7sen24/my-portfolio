@@ -1,110 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Navbar</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-
-        body {
-            background: #f5f5f5;
-        }
-
-        /* ─── NAVBAR ─────────────────────────────────────────── */
-        header {
-            width: 100%;
-            background: #222;
-            padding: 15px 20px;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        /* ─── HAMBURGER (Checkbox Hack) ───────────────────────── */
-        #menu-btn {
-            display: none;
-        }
-
-        .menu-icon {
-            display: none;
-            font-size: 26px;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        /* ─── RESPONSIVE ─────────────────────────────────────── */
-        @media (max-width: 768px) {
-            nav {
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background: #222;
-                flex-direction: column;
-                padding: 15px 0;
-                display: none;
-            }
-
-            nav a {
-                padding: 12px 20px;
-                display: block;
-            }
-
-            #menu-btn:checked ~ nav {
-                display: flex;
-            }
-
-            .menu-icon {
-                display: block;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Ahmed Mohsen</title>
 </head>
 
 <body>
 
     <header>
-        <div class="logo">My Website</div>
+        <a href="#" class="logo">
+            <h3>Ahmed Mohsen</h3>
+            <span>Building ideas beautifully</span>
+        </a>
 
-        <!-- Checkbox -->
-        <input type="checkbox" id="menu-btn">
+        <!-- زر الهامبورجر + checkbox -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
 
-        <!-- Hamburger Icon -->
-        <label for="menu-btn" class="menu-icon">☰</label>
-
-        <!-- Navigation -->
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+        <!-- القائمة -->
+        <nav class="navigation">
+            <a href="#about-me">About Me</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#work-experience">WORK EXPERIENCE</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#skills">SKILLS</a>
         </nav>
     </header>
+
+
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Ahmed <br><span>Front-End Developer</span></h2>
+            <h3>I build ideas beautifully</h3>
+            <a href="#projects" class="main-btn">View My Projects</a>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cards" id="about-me">
+        <h2>About Me</h2>
+        <div class="content">
+            <p>
+                Front-end developer with over 1 year of experience in designing and developing
+                responsive, user-friendly, and visually engaging web interfaces. Passionate about
+                front-end development, responsive design, and cross-browser compatibility.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="cards" id="education">
+        <h2 class="title">EDUCATION</h2>
+
+        <div class="content">
+
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="info">
+                    <h3>Bachelor of Computer Science</h3>
+                    <p>Arab Open University / The Open University, Jul 2023</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="info">
+                    <h3>Full Stack Diploma</h3>
+                    <p>Route Academy, Jun 2025</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-school"></i></div>
+                <div class="info">
+                    <h3>English Course <br><span>(B2, In Progress)</span></h3>
+                    <p>The American University in Cairo</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="cards" id="work-experience">
+        <h2 class="title">WORK EXPERIENCE</h2>
+
+        <div class="content">
+
+            <div class="card">
+                <div class="icon">
+                    <img src="img/chat.jpg" alt="Chat Work">
+                </div>
+                <div class="info">
+                    <h3>
+                        Customer Service Agent <br>
+                        <span>Telecom Egypt, Digital Chat Group (Oct 2023 – Present)</span>
+                    </h3>
+                    <p>
+                        • Handled 50+ customer inquiries daily via digital chat.<br>
+                        • Improved response time by 15%.<br>
+                        • Ensured customer satisfaction using communication and problem-solving skills.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 </html>
